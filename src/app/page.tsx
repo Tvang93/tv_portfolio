@@ -19,7 +19,7 @@ export default function Home() {
           <div>
             <img
               src="/assets/headshot.jpg"
-              className="h-125 rounded-[20px]"
+              className="h-125 rounded-[20px] shadow-lg"
               alt="Thao Vang head shot"
             />
           </div>
