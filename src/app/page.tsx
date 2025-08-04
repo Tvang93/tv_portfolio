@@ -2,102 +2,65 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen max-h-screen grid grid-cols-12 bg-blue-200 text-black">
+      <div className="col-span-5 h-full w-full flex justify-center items-center">
+        <div>
+          <h1 className="font-bold text-6xl">Thao Vang</h1>
+          <h2 className='text-2xl'>Junior Software Developer</h2>
+          <h3>Email: vangt39@gmail.com | Phone: (209)373-7382</h3>
+          <p className="mt-16 mb-20">Engineering solutions with creative, seamless experiences.</p>
+          {/* <IconLinksComponent /> */}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="col-span-7 w-full max-h-screen px-10 py-10">
+        <div className="h-full ps-10 pe-30 flex flex-col bg-[rgb(255,255,255,0.4)] rounded-2xl overflow-y-auto scrollbar-hidden gap-8">
+          <div className="flex flex-col gap-5 mt-8">
+            <h2 className="text-2xl">About Me</h2>
+            <p>I am a full-stack developer with expertise in TypeScript, Next.js, and Tailwind CSS, dedicated to creating intuitive and impactful web applications. With a background in education, I bring a structured and thoughtful approach to problem-solving, ensuring that my work is both technically sound and user-friendly. My current project, MatchPoint, leverages mapping technology to help users find and engage with local tennis courts, blending geospatial queries with seamless UI design. I thrive on innovation and practicality, always seeking ways to optimize backend functionality and refine frontend experiences. Passionate about sustainability and efficient solutions, I enjoy bridging creativity with technical precision to develop meaningful applications.</p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <h2 className="text-2xl">Tech Stack</h2>
+            <div className="grid grid-cols-5 gap-3">
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/tsicon.png" className="w-10 h-10" alt="Typescript Logo" />
+                <h3 className="text-center">TypeScript</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/jsicon.png" className="w-10 h-10" alt="JavaScript Logo" />
+                <h3 className="text-center">JavaScript</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/csharpicon.png" className="w-10 h-10" alt="C# Logo" />
+                <h3 className="text-center">C#</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/cssicon.png" className="w-10 h-10" alt="CSS Logo" />
+                <h3 className="text-center">CSS</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/reacticon.png" className="w-10 h-10" alt="React & Next.JS Logo" />
+                <h3 className="text-center">React & Next.JS</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/figmaicon.png" className="w-10 h-10" alt="Figma Logo" />
+                <h3 className="text-center">Figma</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/azureicon.png" className="w-10 h-10" alt="Microsoft Azure Logo" />
+                <h3 className="text-center">Microsoft Azure</h3>
+              </div>
+              <div className="flex flex-col items-center py-2.5 px-4 bg-[rgb(255,255,255,0.4)] rounded-2xl gap-2">
+                <img src="/assets/tailwindicon.png" className="w-10 h-10" alt="Tailwind CSS Logo" />
+                <h3 className="text-center">Tailwind CSS</h3>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 mb-8">
+            <h2 className="text-2xl">Projects</h2>
+            {/* <ProjectComponent /> */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
