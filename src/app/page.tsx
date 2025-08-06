@@ -3,6 +3,7 @@ import SocialSidebarComponent from "./components/SocialSidebarComponent";
 import NavBarComponent from "./components/NavBarComponent";
 import { NavEnum } from "@/enums/NavEnums";
 import { SectionIdEnum } from "@/enums/SectionIdEnum";
+import { EmailJSComponent } from "./components/EmailJSComponent";
 
 export default function Home() {
   return (
@@ -55,7 +56,8 @@ export default function Home() {
           >
             <h1 className="text-4xl text-[#4B2E2E]">Contact</h1>
             <h2 className="text-[#4B2E2E]">Feel Free To Contact Me By Sending Me A Message Below</h2>
-            <div className="flex flex-col items-center mt-4">
+            <EmailJSComponent />
+            {/* <div className="flex flex-col items-center mt-4">
               <input
                 type="text"
                 placeholder="Your Name"
@@ -73,7 +75,7 @@ export default function Home() {
             </div>
             <button className="bg-[#4B2E2E] text-[#D8CFC4] p-2 rounded cursor-pointer">
               Send Message
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
