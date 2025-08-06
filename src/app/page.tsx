@@ -4,6 +4,7 @@ import NavBarComponent from "./components/NavBarComponent";
 import { NavEnum } from "@/enums/NavEnums";
 import { SectionIdEnum } from "@/enums/SectionIdEnum";
 import { EmailJSComponent } from "./components/EmailJSComponent";
+import ProjectDisplayComponent from "./components/ProjectDisplayComponent";
 
 export default function Home() {
   return (
@@ -49,6 +50,12 @@ export default function Home() {
             id={SectionIdEnum.PROJECTS} 
             className="min-h-screen flex flex-col items-center justify-center"
           >
+            <h1 className="text-4xl text-[#4B2E2E] mt-20">Projects</h1>
+            <div className="flex flex-col gap-10 mt-8">
+              {Object.values(NavEnum).map((project) => (
+                <ProjectDisplayComponent key={project} project={project} />
+              ))}
+            </div>
           </div>
           <div
             id={SectionIdEnum.CONTACT}
@@ -57,25 +64,6 @@ export default function Home() {
             <h1 className="text-4xl text-[#4B2E2E]">Contact</h1>
             <h2 className="text-[#4B2E2E]">Feel Free To Contact Me By Sending Me A Message Below</h2>
             <EmailJSComponent />
-            {/* <div className="flex flex-col items-center mt-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="p-2 mb-2 border border-[#4B2E2E] rounded min-w-120"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="p-2 mb-2 border border-[#4B2E2E] rounded min-w-120"
-              />
-              <textarea
-                placeholder="Your Message"
-                className="p-2 mb-2 border border-[#4B2E2E] rounded w-full max-w-md min-w-120 h-32"
-              ></textarea>
-            </div>
-            <button className="bg-[#4B2E2E] text-[#D8CFC4] p-2 rounded cursor-pointer">
-              Send Message
-            </button> */}
           </div>
         </div>
       </div>
