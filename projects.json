@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+        "name": "Project Alpha",
+        "description": "A project focused on developing AI technologies.",
+        "start_date": "2023-01-15",
+        "end_date": "2024-01-15",
+        "status": "In Progress"
+        },
+        {
+        "name": "Project Beta",
+        "description": "A web development project for e-commerce solutions.",
+        "start_date": "2022-06-01",
+        "end_date": "2023-06-01",
+        "status": "Completed"
+        },
+        {
+        "name": "Project Gamma",
+        "description": "Research on renewable energy sources.",
+        "start_date": "2023-03-10",
+        "end_date": "2024-03-10",
+        "status": "In Progress"
+        }
+    ]
+}

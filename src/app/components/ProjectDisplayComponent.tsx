@@ -1,4 +1,4 @@
-import React from "react";
+import React, { } from "react";
 
 interface Prop {
     project: string;
@@ -6,6 +6,7 @@ interface Prop {
 
 const ProjectDisplayComponent = (prop: Prop) => {
     const { project } = prop;
+
   return (
     <div
       className="bg-white bg-opacity-80 rounded-lg shadow-lg p-6 flex flex-col items-center"

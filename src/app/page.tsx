@@ -7,6 +7,14 @@ import { EmailJSComponent } from "./components/EmailJSComponent";
 import ProjectDisplayComponent from "./components/ProjectDisplayComponent";
 
 export default function Home() {
+  const getData = async (link: string) => {
+    const response = await fetch(link);
+    const data = await response.json();
+    return data.projects;
+  };
+
+  const projectsData = getData("/data/projects.json");
+
   return (
     <>
       <NavBarComponent
@@ -43,16 +51,24 @@ export default function Home() {
           >
             <h1 className="text-2xl text-[#4B2E2E]">About Me!</h1>
             <h2 className="text-xl text-white max-w-2xl mt-4 ">
-              I am a full-stack developer with expertise in TypeScript, C#, and T-SQL. With a background in education, I bring a structured and thoughtful approach to problem-solving, ensuring that my work is both technically sound and user-friendly. I thrive on innovation and practicality, always seeking ways to optimize backend functionality and refine frontend experiences. Passionate about sustainability and efficient solutions, I enjoy bridging creativity with technical precision to develop meaningful applications.
+              I am a full-stack developer with expertise in TypeScript, C#, and
+              T-SQL. With a background in education, I bring a structured and
+              thoughtful approach to problem-solving, ensuring that my work is
+              both technically sound and user-friendly. I thrive on innovation
+              and practicality, always seeking ways to optimize backend
+              functionality and refine frontend experiences. Passionate about
+              sustainability and efficient solutions, I enjoy bridging
+              creativity with technical precision to develop meaningful
+              applications.
             </h2>
           </div>
-          <div 
-            id={SectionIdEnum.PROJECTS} 
+          <div
+            id={SectionIdEnum.PROJECTS}
             className="min-h-screen flex flex-col items-center justify-center"
           >
             <h1 className="text-4xl text-[#4B2E2E] mt-20">Projects</h1>
             <div className="flex flex-col gap-10 mt-8">
-              {Object.values(NavEnum).map((project) => (
+              {projectsData && projectsData.map((project) => (
                 <ProjectDisplayComponent key={project} project={project} />
               ))}
             </div>
@@ -62,7 +78,9 @@ export default function Home() {
             className="min-h-screen flex flex-col items-center justify-center gap-5"
           >
             <h1 className="text-4xl text-[#4B2E2E]">Contact</h1>
-            <h2 className="text-[#4B2E2E]">Feel Free To Contact Me By Sending Me A Message Below</h2>
+            <h2 className="text-[#4B2E2E]">
+              Feel Free To Contact Me By Sending Me A Message Below
+            </h2>
             <EmailJSComponent />
           </div>
         </div>
