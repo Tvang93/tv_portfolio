@@ -6,6 +6,7 @@ import { SectionIdEnum } from "@/enums/SectionIdEnum";
 import { EmailJSComponent } from "./components/EmailJSComponent";
 import ProjectDisplayComponent from "./components/ProjectDisplayComponent";
 import ProjectData from "../data/projects.json";
+import { IProjects } from "./interfaces/IProjects";
 
 export default function Home() {
   const projectsData = ProjectData;
@@ -63,8 +64,8 @@ export default function Home() {
           >
             <h1 className="text-4xl text-[#4B2E2E] mt-20">Projects</h1>
             <div className="flex flex-col gap-10 mt-8">
-              {projectsData && projectsData.projects.map((project:any) => (
-                <ProjectDisplayComponent key={project} project={project} />
+              {projectsData && projectsData.projects.map((project:IProjects, idx) => (
+                <ProjectDisplayComponent key={idx} project={project} />
               ))}
             </div>
           </div>

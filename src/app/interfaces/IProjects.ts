@@ -1,7 +1,7 @@
 export interface IProjects
 {
-    project: string;
-    projectDescription: string;
-    projectLink: string;
-    projectImage: string;
+    Project: string;
+    ProjectDescription: string;
+    ProjectLink: string;
+    ProjectImage: string;
 }
