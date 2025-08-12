@@ -63,7 +63,7 @@ export default function Home() {
             className="min-h-screen flex flex-col items-center justify-center"
           >
             <h1 className="text-4xl text-[#4B2E2E] mt-20">Projects</h1>
-            <div className="flex flex-col gap-10 mt-8">
+            <div className="flex flex-col gap-10 mt-8 justify-center max-w-[60%]">
               {projectsData && projectsData.projects.map((project:IProjects, idx) => (
                 <ProjectDisplayComponent key={idx} project={project} />
               ))}
