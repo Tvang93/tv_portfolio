@@ -1,25 +1,28 @@
 {
-    "projects": [
-        {
-        "name": "Project Alpha",
-        "description": "A project focused on developing AI technologies.",
-        "start_date": "2023-01-15",
-        "end_date": "2024-01-15",
-        "status": "In Progress"
-        },
-        {
-        "name": "Project Beta",
-        "description": "A web development project for e-commerce solutions.",
-        "start_date": "2022-06-01",
-        "end_date": "2023-06-01",
-        "status": "Completed"
-        },
-        {
-        "name": "Project Gamma",
-        "description": "Research on renewable energy sources.",
-        "start_date": "2023-03-10",
-        "end_date": "2024-03-10",
-        "status": "In Progress"
-        }
-    ]
+  "projects": [
+    {
+      "Project": "MatchPoint",
+      "ProjectDescription": "A full stack application that I team led to create. The application allows user to search a location to find tennis courts nearby. My team and I created a database using Microsoft Azure. We built the frontend in Next.js where we fetched data from our database to populate the information. We also intergrated Mapbox into the application.",
+      "ProjectLink": "https://matchpoint-three.vercel.app/",
+      "ProjectImage": "/assets/matchpoint.png"
+    },
+    {
+      "Project": "Pokemon Api",
+      "ProjectDescription": "Using a Pokemon API, I designed a Pokemon applicaiton that can search for pokemon, displaying information such as their Pokedex number, their Type, all their moves, all thei abilities, their evelotuionary tree, and other information.",
+      "ProjectLink": "https://pokemon-api-next-nine.vercel.app/",
+      "ProjectImage": "/assets/pokemonApi.png"
+    },
+    {
+      "Project": "Tip Calculator",
+      "ProjectDescription": "A tip calculator built using React. The tip calculator was built to look as cloase as possible to a design from FrontEndMentor.io",
+      "ProjectLink": "https://tip-calculator-beta-ten.vercel.app/",
+      "ProjectImage": "/assets/tipCalculator.png"
+    },
+    {
+      "Project": "All For One",
+      "ProjectDescription": "A compilation of minor projects put altogether using React.",
+      "ProjectLink": "https://all-for-one-react-chi.vercel.app/",
+      "ProjectImage": "/assets/allForOne.png"
+    }
+  ]
 }

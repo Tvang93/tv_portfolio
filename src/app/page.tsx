@@ -8,12 +8,6 @@ import ProjectDisplayComponent from "./components/ProjectDisplayComponent";
 import ProjectData from "../data/projects.json";
 
 export default function Home() {
-  const getData = async (link: string) => {
-    const response = await fetch(link);
-    const data = await response.json();
-    return data.projects;
-  };
-
   const projectsData = ProjectData;
 
   return (
