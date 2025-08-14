@@ -16,7 +16,7 @@ const ProjectDisplayComponent = (prop: Prop) => {
       <img
         src={project.ProjectImage}
         alt={`${project.ProjectImage} screenshot`}
-        className="w-[120px] lg:w-[60px] h-48 object-cover rounded mb-4"
+        className="w-[80%] h-48 object-cover object-top rounded mb-4"
       />
       <p className="text-center text-[#333] ">
         {project.ProjectDescription}
