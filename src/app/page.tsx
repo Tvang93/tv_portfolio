@@ -1,7 +1,5 @@
-import Image from "next/image";
 import SocialSidebarComponent from "./components/SocialSidebarComponent";
 import NavBarComponent from "./components/NavBarComponent";
-import { NavEnum } from "@/enums/NavEnums";
 import { SectionIdEnum } from "@/enums/SectionIdEnum";
 import { EmailJSComponent } from "./components/EmailJSComponent";
 import ProjectDisplayComponent from "./components/ProjectDisplayComponent";
@@ -43,20 +41,25 @@ export default function Home() {
           </div>
           <div
             id={SectionIdEnum.ABOUT}
-            className="min-h-screen flex flex-col items-center justify-center"
+            className="min-h-screen flex items-center justify-around"
           >
-            <h1 className="text-2xl text-[#4B2E2E]">About Me!</h1>
-            <h2 className="text-xl text-white max-w-2xl mt-4 ">
-              I am a full-stack developer with expertise in TypeScript, C#, and
-              T-SQL. With a background in education, I bring a structured and
-              thoughtful approach to problem-solving, ensuring that my work is
-              both technically sound and user-friendly. I thrive on innovation
-              and practicality, always seeking ways to optimize backend
-              functionality and refine frontend experiences. Passionate about
-              sustainability and efficient solutions, I enjoy bridging
-              creativity with technical precision to develop meaningful
-              applications.
-            </h2>
+            <div>
+              <h1 className="text-2xl text-[#4B2E2E]">About Me!</h1>
+              <h2 className="text-xl text-white max-w-2xl mt-4 ">
+                I am a full-stack developer with expertise in TypeScript, C#, and
+                T-SQL. With a background in education, I bring a structured and
+                thoughtful approach to problem-solving, ensuring that my work is
+                both technically sound and user-friendly. I thrive on innovation
+                and practicality, always seeking ways to optimize backend
+                functionality and refine frontend experiences. Passionate about
+                sustainability and efficient solutions, I enjoy bridging
+                creativity with technical precision to develop meaningful
+                applications.
+              </h2>
+            </div>
+            <div>
+              <p>PlaceHolder</p>
+            </div>
           </div>
           <div
             id={SectionIdEnum.PROJECTS}
