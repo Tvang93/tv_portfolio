@@ -44,7 +44,7 @@ export default function Home() {
             className="min-h-screen flex items-center justify-around"
           >
             <div>
-              <h1 className="text-2xl text-[#4B2E2E]">About Me!</h1>
+              <h1 className="text-2xl text-[#4B2E2E]">About Me</h1>
               <h2 className="text-xl text-white max-w-2xl mt-4 ">
                 I am a full-stack developer with expertise in TypeScript, C#, and
                 T-SQL. With a background in education, I bring a structured and
@@ -58,7 +58,16 @@ export default function Home() {
               </h2>
             </div>
             <div>
-              <p>PlaceHolder</p>
+              <p>Tech Stack</p>
+              <ul className="list-disc list-inside text-lg text-[#4B2E2E]">
+                <li>TypeScript</li>
+                <li>C#</li>
+                <li>T-SQL</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+              </ul>
             </div>
           </div>
           <div
