@@ -65,6 +65,9 @@ export default function Home() {
                 <li>T-SQL</li>
                 <li>React</li>
                 <li>Next.js</li>
+                <li>RESTful APIs</li>
+                <li>HTML</li>
+                <li>CSS</li>
               </ul>
             </div>
           </div>
