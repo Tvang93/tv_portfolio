@@ -30,7 +30,7 @@ const NavBarComponent = (props: Props) => {
   }, [activeTab]);
 
   return (
-    <div className="absolute top-0 flex justify-center w-full gap-6 mt-4">
+    <div className="absolute top-0 flex justify-center w-full gap-4 mt-4">
       <button onClick={() => handleNavClick(homeTag as string)}>
         <h1
           className={`text-[28px] text-[#4B2E2E] px-4 ${
